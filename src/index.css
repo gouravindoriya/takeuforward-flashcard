@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn{
+  @apply bg-slate-900 hover:bg-blue-950 text-white font-bold py-2 px-4 rounded;
+}
+
+body{
+  background: hsla(213, 77%, 14%, 1);
+
+  background: linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
+  
+  
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#08203E", endColorstr="#557C93", GradientType=1 );
+}
+.load{
+  animation: flip .5s ;
+}
+
+@keyframes flip {
+  from{
+   transform: rotateY(0deg);
+  }
+  from{
+   transform: rotateY(90deg);
+  }
+}
